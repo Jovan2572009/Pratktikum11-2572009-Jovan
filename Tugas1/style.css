@@ -1,0 +1,44 @@
+#tambah {
+    background-color: green;
+    color: white;
+}
+#kosong {
+    color: #7f8c8d ;
+}
+body {
+    background-color: #ecf0f1 ;
+}
+#etalase {
+    display: grid;
+    grid-column: repeat
+    (4, 1fr);
+    gap: 20px;
+}
+#card {
+    background-color: white;
+    padding: 20px;
+    max-height: 150px;
+    object-fit: contain;
+}
+#gambar {
+    max-height: 150px;
+    object-fit: contain;
+}
+
+#judul {
+    color: black;
+    max-height: 40px;
+    overflow: hidden;
+}
+#harga {
+    color: orange;
+}
+#hapus {
+    bottom: auto;
+    width: 100%;
+    background-color: red;
+    color: white;
+}
+#hapus:hover{
+    background-color: darkred;
+}

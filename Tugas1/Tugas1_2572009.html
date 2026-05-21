@@ -1,0 +1,46 @@
+<!-- 2572009 - Jovan -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etalase - 2572009</title>
+    <script src="
+https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js
+"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+    <h3>Made by 2572009</h3>
+    <button id = "tambah">Tambah produk acak</button>
+    <br><br>
+    <p id = "kosong">Belum ada produk di etalase, silahkan tambah produk</p>
+    <div id=  "etalase">
+        <div id = "card">
+            
+        </div>
+    </div>
+    </center>
+    <script>
+    $(document).ready(function(){
+        $("#tambah").click(() =>{
+            $("#tambah").text("Sedang memuat..")
+            const angka = Math.floor(Math.random()*20)
+            var url = "https://fakestoreapi.com/products/" + angka
+           $.get(url,function(result) {
+                let result_div = ""
+                result_div += "<div>"+ result.title +"</div>"
+                result_div += "<div>$"+ result.price + "</div>"
+                
+                $("#card").append(result_div)
+           })
+           $("#tambah").text("tambah produk acak")
+           $("#kosong").hide()
+           
+
+        })
+    })
+    </script>
+</body>
+</html>
