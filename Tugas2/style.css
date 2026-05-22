@@ -1,0 +1,168 @@
+body {
+    background-color: #111111;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.subtitle {
+    color: #888;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+#searchWrapper {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 20px auto;
+}
+
+.search-box {
+    display: flex;
+    width: 100%;
+}
+
+#search-input {
+    flex: 1;
+    padding: 12px 15px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: black;
+    background-color: white;
+}
+
+.btn-search {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 0 25px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#suggestionBox {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    color: black;
+    text-align: left;
+    display: none;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.suggestion-item {
+    padding: 12px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    border-bottom: 1px solid #eee;
+}
+
+.suggestion-item:hover {
+    background-color: #f2f2f2;
+}
+
+.recent-title {
+    padding: 10px 15px 5px 15px;
+    font-size: 11px;
+    color: #777;
+    font-weight: bold;
+}
+
+.btn-del {
+    background: none;
+    border: none;
+    color: #888;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-del:hover {
+    color: #e50914;
+}
+
+#search-result-info {
+    text-align: left;
+    max-width: 500px;
+    margin: 10px auto;
+    font-size: 14px;
+    color: white;
+}
+
+#search-result-info span {
+    color: #e50914;
+    font-weight: bold;
+}
+
+#movie-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 20px;
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.movie-card {
+    background-color: #222;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.movie-poster-placeholder {
+    width: 100%;
+    height: 140px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.movie-title {
+    font-weight: bold;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.movie-year {
+    font-size: 12px;
+    color: #888;
+    margin: 2px 0;
+}
+
+.movie-genre {
+    display: inline-block;
+    background-color: #444;
+    color: #ccc;
+    font-size: 10px;
+    padding: 3px 6px;
+    border-radius: 3px;
+    margin-top: 5px;
+}

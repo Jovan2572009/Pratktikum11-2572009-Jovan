@@ -1,44 +1,81 @@
-#tambah {
+body {
+    background-color: #ecf0f1;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+h3 {
+    text-align: center;
+    color: #2c3e50;
+}
+.btn-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+#btn-tambah {
     background-color: green;
     color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
 }
-#kosong {
-    color: #7f8c8d ;
-}
-body {
-    background-color: #ecf0f1 ;
+#empty-state {
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 16px;
+    margin-top: 40px;
 }
 #etalase {
     display: grid;
-    grid-column: repeat
-    (4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-#card {
+.card-produk {
     background-color: white;
     padding: 20px;
-    max-height: 150px;
-    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-#gambar {
+.card-produk img {
     max-height: 150px;
+    width: 100%;
     object-fit: contain;
+    margin-bottom: 15px;
 }
-
-#judul {
+.card-produk h4 {
     color: black;
-    max-height: 40px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    height: 40px;
     overflow: hidden;
+    font-size: 14px;
+    line-height: 20px;
 }
-#harga {
+.card-produk .harga {
     color: orange;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 15px;
 }
-#hapus {
-    bottom: auto;
+.btn-hapus {
     width: 100%;
     background-color: red;
     color: white;
+    border: none;
+    padding: 8px 0;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.2s;
 }
-#hapus:hover{
+.btn-hapus:hover {
     background-color: darkred;
 }
